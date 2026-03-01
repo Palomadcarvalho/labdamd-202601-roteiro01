@@ -16,6 +16,11 @@ def cliente_nervoso(id_cliente):
         
         print(f"[CLIENTE {id_cliente:02d}] 🟡 Tentando entrar...")
         client.connect((HOST, PORT))
+
+        mensagem = f"Tarefa do Cliente {id_cliente}"
+        print(f"[CLIENTE {id_cliente}] Enviando: {mensagem}")
+        
+        client.send(mensagem.encode('utf-8'))
         
         # Se passou daqui, o SO aceitou a conexão (está no backlog ou sendo atendido)
         print(f"[CLIENTE {id_cliente:02d}] 🟢 Conectou! Esperando resposta...")
@@ -34,11 +39,11 @@ def cliente_nervoso(id_cliente):
         client.close()
 
 if __name__ == "__main__":
-    print("--- INICIANDO ATAQUE DE 10 CLIENTES SIMULTÂNEOS ---")
+    print("--- INICIANDO ATAQUE DE 200 CLIENTES SIMULTÂNEOS ---")
     
     threads = []
     # Dispara 10 clientes para garantir que a fila estoure
-    for i in range(1, 11):
+    for i in range(1, 201):
         t = threading.Thread(target=cliente_nervoso, args=(i,))
         threads.append(t)
         t.start()
