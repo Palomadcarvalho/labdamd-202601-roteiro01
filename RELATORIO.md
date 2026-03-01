@@ -1,6 +1,7 @@
 # RELATÓRIO - Laboratório de Concorrência e Gargalos em Servidores TCP
 
-Aluna: Paloma Dias de Carvalho
+**Aluna:** Paloma Dias de Carvalho
+
 
 ## Questão 1 — Backlog e Recusa de Conexões
 
@@ -76,7 +77,7 @@ O modelo multithread, por outro lado, é mais indicado para cenários CPU-bound 
 
 <img width="1252" height="910" alt="Desafio_extra_02" src="https://github.com/user-attachments/assets/a86f4fb4-e2eb-4ef7-96ce-1bc5e5aa6f85" />
 
-# EVIDÊNCIA DOS TESTES
+## EVIDÊNCIA DOS TESTES
 
 *1.1 Servidor bloqueante:*
 <img width="1257" height="390" alt="1 1 Servidor Bloqueante" src="https://github.com/user-attachments/assets/bf504f09-f5bc-4f8b-9d0c-eef5049ea2c0" />
@@ -89,4 +90,5 @@ O modelo multithread, por outro lado, é mais indicado para cenários CPU-bound 
 
 *3.3 Validação*
 <img width="1262" height="908" alt="3 3 Validação" src="https://github.com/user-attachments/assets/8fa7e1ba-df13-4c60-adcf-916f3584acff" />
+
 
